@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#161616"/>
+  <rect x="40" y="30" width="520" height="50" rx="8" fill="#1e1e1e" stroke="#90EE90" stroke-width="1" stroke-opacity="0.3"/>
+  <circle cx="65" cy="55" r="8" fill="#ff5f57"/><circle cx="90" cy="55" r="8" fill="#febc2e"/><circle cx="115" cy="55" r="8" fill="#28c840"/>
+  <text x="300" y="60" text-anchor="middle" fill="#90EE90" font-family="monospace" font-size="16">Student Management System</text>
+  <rect x="40" y="100" width="520" height="35" rx="4" fill="#1a1a1a"/>
+  <text x="60" y="123" fill="#666" font-family="monospace" font-size="12">ID</text>
+  <text x="140" y="123" fill="#666" font-family="monospace" font-size="12">Name</text>
+  <text x="280" y="123" fill="#666" font-family="monospace" font-size="12">Course</text>
+  <text x="400" y="123" fill="#666" font-family="monospace" font-size="12">Grade</text>
+  <text x="500" y="123" fill="#666" font-family="monospace" font-size="12">Actions</text>
+  <rect x="40" y="140" width="520" height="35" rx="0" fill="#161616"/>
+  <text x="60" y="163" fill="#aaa" font-family="monospace" font-size="12">001</text>
+  <text x="140" y="163" fill="#ddd" font-family="monospace" font-size="12">Deepak K</text>
+  <text x="280" y="163" fill="#ddd" font-family="monospace" font-size="12">ECE</text>
+  <text x="400" y="163" fill="#90EE90" font-family="monospace" font-size="12">A+</text>
+  <rect x="490" y="148" width="50" height="22" rx="4" fill="#90EE90" opacity="0.2"/>
+  <text x="515" y="163" text-anchor="middle" fill="#90EE90" font-family="monospace" font-size="10">Edit</text>
+  <rect x="40" y="180" width="520" height="35" rx="0" fill="#1a1a1a"/>
+  <text x="60" y="203" fill="#aaa" font-family="monospace" font-size="12">002</text>
+  <text x="140" y="203" fill="#ddd" font-family="monospace" font-size="12">Priya S</text>
+  <text x="280" y="203" fill="#ddd" font-family="monospace" font-size="12">CSE</text>
+  <text x="400" y="203" fill="#90EE90" font-family="monospace" font-size="12">A</text>
+  <rect x="490" y="188" width="50" height="22" rx="4" fill="#90EE90" opacity="0.2"/>
+  <text x="515" y="203" text-anchor="middle" fill="#90EE90" font-family="monospace" font-size="10">Edit</text>
+  <rect x="40" y="220" width="520" height="35" rx="0" fill="#161616"/>
+  <text x="60" y="243" fill="#aaa" font-family="monospace" font-size="12">003</text>
+  <text x="140" y="243" fill="#ddd" font-family="monospace" font-size="12">Rahul M</text>
+  <text x="280" y="243" fill="#ddd" font-family="monospace" font-size="12">EEE</text>
+  <text x="400" y="243" fill="#90EE90" font-family="monospace" font-size="12">B+</text>
+  <rect x="490" y="228" width="50" height="22" rx="4" fill="#90EE90" opacity="0.2"/>
+  <text x="515" y="243" text-anchor="middle" fill="#90EE90" font-family="monospace" font-size="10">Edit</text>
+  <rect x="40" y="310" width="140" height="40" rx="8" fill="#90EE90"/>
+  <text x="110" y="335" text-anchor="middle" fill="#111" font-family="sans-serif" font-weight="bold" font-size="13">+ Add Student</text>
+  <rect x="200" y="310" width="140" height="40" rx="8" fill="none" stroke="#90EE90" stroke-width="1.5"/>
+  <text x="270" y="335" text-anchor="middle" fill="#90EE90" font-family="sans-serif" font-weight="bold" font-size="13">Export CSV</text>
+</svg>

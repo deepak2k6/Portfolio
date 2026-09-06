@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deepak | Portfolio</title>
+  <meta name="description"
+    content="Professional portfolio of Deepak — ECE student, frontend developer. Explore projects, skills, and get in touch." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- ========== LOADING SCREEN ========== -->
+  <div id="loader" class="loader">
+    <div class="loader-ring"></div>
+    <span class="loader-text">Loading<span class="dots">...</span></span>
+  </div>
+
+  <!-- ========== NAVBAR ========== -->
+  <header id="navbar" class="navbar">
+    <a href="#home" class="logo">Portfolio</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#resume" class="nav-link">Resume</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+        <i class='bx bx-moon'></i>
+      </button>
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO / HOME ========== -->
+  <section id="home" class="hero section">
+    <div class="hero-bg-gradient"></div>
+    <div class="container hero-grid">
+      <!-- Left -->
+      <div class="hero-content reveal">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Deepak</h1>
+        <h2 class="hero-title">
+          <span class="typing-prefix">I'm a&nbsp;</span>
+          <span id="typingText" class="typing-text"></span>
+          <span class="typing-cursor">|</span>
+        </h2>
+        <p class="hero-description">
+          Passionate ECE student interested in web development, embedded systems, IoT projects, and modern UI/UX design.
+          Loves creating responsive websites and smart technology solutions.
+        </p>
+        <div class="hero-buttons">
+          <a href="#resume" class="btn btn-primary"><i class='bx bx-download'></i> Download Resume</a>
+          <a href="#contact" class="btn btn-outline"><i class='bx bx-envelope'></i> Contact Me</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/deepak2k6" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+              class='bx bxl-github'></i></a>
+          <a href="https://www.linkedin.com/in/deepak-l-197b32290?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+            target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+          <a href="https://www.instagram.com/_deepxk._.18?igsh=MWdlcWFqdWZkc2NhcA==" target="_blank"
+            rel="noopener noreferrer" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+          <a href="mailto:deepak142006@gmail.com" aria-label="Email"><i class='bx bx-envelope'></i></a>
+        </div>
+      </div>
+      <!-- Right -->
+      <div class="hero-image-wrapper reveal">
+        <div class="hero-image-glow"></div>
+        <img src="images/profile.jpeg" alt="Deepak — ECE Student" class="hero-image" id="profileImg" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title reveal"><span class="accent">//</span> About Me <span class="accent">//</span></h2>
+      <div class="about-grid">
+        <!-- Intro Card -->
+        <div class="about-card reveal">
+          <div class="about-card-icon"><i class='bx bx-user'></i></div>
+          <h3>Who I Am</h3>
+          <p>I am an Electronics and Communication Engineering student passionate about bridging the gap between hardware and software. My interests span across web development, embedded systems, VLSI design, and RF & Antenna design. I enjoy building innovative solutions, from programming microcontrollers to developing responsive web applications.</p>
+        </div>
+        <!-- Education Card -->
+        <div class="about-card reveal">
+          <div class="about-card-icon"><i class='bx bx-book-open'></i></div>
+          <h3>Education</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="timeline-date">2023 – Present</span>
+              <h4>B.E. — Electronics & Communication Engineering (ECE)</h4>
+              <p>Sri Krishna College of Technology, Coimbatore<br>CGPA: 7.41</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-date">2021 – 2023</span>
+              <h4>Higher Secondary Education</h4>
+              <p>Blue Bird Matriculation Higher Secondary School<br>Percentage: 89%</p>
+            </div>
+          </div>
+        </div>
+        <!-- Career Objective Card -->
+        <div class="about-card reveal">
+          <div class="about-card-icon"><i class='bx bx-target-lock'></i></div>
+          <h3>Career Objective</h3>
+          <p>A motivated Electronics and Communication Engineering student with hands-on experience in embedded systems, electronics manufacturing, and software development. Seeking an entry-level role where I can apply technical skills, problem-solving ability, and a strong learning mindset to contribute to innovative and real-world engineering solutions.</p>
+        </div>
+        <!-- Hobbies Card -->
+        <div class="about-card reveal">
+          <div class="about-card-icon"><i class='bx bx-heart'></i></div>
+          <h3>Hobbies & Interests</h3>
+          <div class="interest-tags">
+            <span class="tag"><i class='bx bx-palette'></i> Web Design</span>
+            <span class="tag"><i class='bx bx-camera'></i> Photography</span>
+            <span class="tag"><i class='bx bx-chip'></i> Arduino Projects</span>
+            <span class="tag"><i class='bx bx-ball'></i> Cricket</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2 class="section-title reveal"><span class="accent">//</span> Skills <span class="accent">//</span></h2>
+      <div class="skills-grid">
+        <!-- Skill Card template repeated -->
+        <div class="skill-card reveal">
+          <i class='bx bxl-html5 skill-icon'></i>
+          <h3>HTML</h3>
+          <p class="skill-tools">VS Code, Chrome DevTools</p>
+          <div class="progress-bar">
+            <div class="progress" data-width="90"></div>
+          </div>
+          <span class="progress-label">90%</span>
+        </div>
+        <div class="skill-card reveal">
+          <i class='bx bxl-css3 skill-icon'></i>
+          <h3>CSS</h3>
+          <p class="skill-tools">Figma, DevTools</p>
+          <div class="progress-bar">
+            <div class="progress" data-width="85"></div>
+          </div>
+          <span class="progress-label">85%</span>
+        </div>
+        <div class="skill-card reveal">
+          <i class='bx bxl-javascript skill-icon'></i>
+          <h3>JavaScript</h3>
+          <p class="skill-tools">Node.js, React</p>
+          <div class="progress-bar">
+            <div class="progress" data-width="75"></div>
+          </div>
+          <span class="progress-label">75%</span>
+        </div>
+        <div class="skill-card reveal">
+          <i class='bx bx-code-alt skill-icon'></i>
+          <h3>C Programming</h3>
+          <p class="skill-tools">GCC, Keil uVision</p>
+          <div class="progress-bar">
+            <div class="progress" data-width="80"></div>
+          </div>
+          <span class="progress-label">80%</span>
+        </div>
+        <div class="skill-card reveal">
+          <i class='bx bx-chip skill-icon'></i>
+          <h3>Embedded Systems</h3>
+          <p class="skill-tools">Raspberry Pi, ESP32</p>
+          <div class="progress-bar">
+            <div class="progress" data-width="70"></div>
+          </div>
+          <span class="progress-label">70%</span>
+        </div>
+        <div class="skill-card reveal">
+          <i class='bx bx-microchip skill-icon'></i>
+          <h3>Arduino</h3>
+          <p class="skill-tools">Arduino IDE, Proteus</p>
+          <div class="progress-bar">
+            <div class="progress" data-width="80"></div>
+          </div>
+          <span class="progress-label">80%</span>
+        </div>
+        <div class="skill-card reveal">
+          <i class='bx bx-wifi skill-icon'></i>
+          <h3>IoT</h3>
+          <p class="skill-tools">Blynk, ThingSpeak</p>
+          <div class="progress-bar">
+            <div class="progress" data-width="72"></div>
+          </div>
+          <span class="progress-label">72%</span>
+        </div>
+        <div class="skill-card reveal">
+          <i class='bx bxl-git skill-icon'></i>
+          <h3>Git & GitHub</h3>
+          <p class="skill-tools">Git Bash, GitHub Desktop</p>
+          <div class="progress-bar">
+            <div class="progress" data-width="78"></div>
+          </div>
+          <span class="progress-label">78%</span>
+        </div>
+        <div class="skill-card reveal">
+          <i class='bx bx-broadcast skill-icon'></i>
+          <h3>ANSYS HFSS</h3>
+          <p class="skill-tools">Simulation, Antenna Design</p>
+          <div class="progress-bar">
+            <div class="progress" data-width="70"></div>
+          </div>
+          <span class="progress-label">70%</span>
+        </div>
+        <div class="skill-card reveal">
+          <i class='bx bxl-java skill-icon'></i>
+          <h3>Java</h3>
+          <p class="skill-tools">Eclipse, IntelliJ IDEA</p>
+          <div class="progress-bar">
+            <div class="progress" data-width="85"></div>
+          </div>
+          <span class="progress-label">85%</span>
+        </div>
+        <div class="skill-card reveal">
+          <i class='bx bx-spreadsheet skill-icon'></i>
+          <h3>Excel</h3>
+          <p class="skill-tools">Data Analysis, Macros</p>
+          <div class="progress-bar">
+            <div class="progress" data-width="80"></div>
+          </div>
+          <span class="progress-label">80%</span>
+        </div>
+        <div class="skill-card reveal">
+          <i class='bx bx-data skill-icon'></i>
+          <h3>SQL</h3>
+          <p class="skill-tools">MySQL, PostgreSQL</p>
+          <div class="progress-bar">
+            <div class="progress" data-width="75"></div>
+          </div>
+          <span class="progress-label">75%</span>
+        </div>
+        <div class="skill-card reveal">
+          <i class='bx bxl-python skill-icon'></i>
+          <h3>Python</h3>
+          <p class="skill-tools">Pandas, Scripts</p>
+          <div class="progress-bar">
+            <div class="progress" data-width="80"></div>
+          </div>
+          <span class="progress-label">80%</span>
+        </div>
+        <div class="skill-card reveal">
+          <i class='bx bx-memory-card skill-icon'></i>
+          <h3>VLSI</h3>
+          <p class="skill-tools">Verilog, VHDL</p>
+          <div class="progress-bar">
+            <div class="progress" data-width="60"></div>
+          </div>
+          <span class="progress-label">60%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-title reveal"><span class="accent">//</span> Projects <span class="accent">//</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-img-wrap">
+            <img src="images/project1.webp" alt="Gas Leak Detector using Arduino" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h3>Gas Leak Detector using Arduino</h3>
+            <p>Designed and implemented a gas detection system using Arduino Uno and MQ-2 gas sensor that triggers
+              alerts when hazardous gases are detected.</p>
+            <div class="project-tech">
+              <span>Arduino Uno</span><span>MQ-2 Sensor</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/deepak2k6" target="_blank" class="btn btn-sm"><i class='bx bxl-github'></i>
+                GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img-wrap">
+            <img src="images/project2.webp" alt="Obstacle Avoiding Robot" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h3>Obstacle Avoiding Robot</h3>
+            <p>Developed an autonomous robot using Arduino Uno and ultrasonic sensors capable of detecting and avoiding
+              obstacles without human intervention.</p>
+            <div class="project-tech">
+              <span>Arduino Uno</span><span>Ultrasonic Sensors</span><span>Robotics</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/deepak2k6" target="_blank" class="btn btn-sm"><i class='bx bxl-github'></i>
+                GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img-wrap">
+            <img src="images/project3.webp" alt="Health Journal - Web Application" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h3>Health Journal - Web Application</h3>
+            <p>Developed a MERN stack web application that allows users to track daily health activities including mood,
+              sleep, physical activity, and nutrition, with interactive dashboards and secure data management.</p>
+            <div class="project-tech">
+              <span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/deepak2k6" target="_blank" class="btn btn-sm"><i class='bx bxl-github'></i>
+                GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img-wrap">
+            <img src="images/project4.svg" alt="Inset-Fed Microstrip Patch Antenna" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h3>Inset-Fed Microstrip Patch Antenna with Dumbbell-Shaped DGS</h3>
+            <p>Designed and simulated an inset-fed microstrip patch antenna with a dumbbell-shaped Defected Ground Structure (DGS) for wireless applications.</p>
+            <div class="project-tech">
+              <span>ANSYS HFSS</span><span>Antenna Design</span><span>RF</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/deepak2k6" target="_blank" class="btn btn-sm"><i class='bx bxl-github'></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RESUME ========== -->
+  <section id="resume" class="section resume">
+    <div class="container">
+      <h2 class="section-title reveal"><span class="accent">//</span> Resume <span class="accent">//</span></h2>
+      <div class="resume-grid">
+        <!-- Resume Preview Card -->
+        <div class="resume-preview reveal">
+          <div class="resume-card-glass">
+            <i class='bx bx-file'></i>
+            <h3>My Resume</h3>
+            <p>Download my latest CV to learn more about my education, skills, and experiences.</p>
+            <a href="assets/resume.pdf" download class="btn btn-primary"><i class='bx bx-download'></i> Download CV</a>
+          </div>
+        </div>
+        <!-- Education Timeline -->
+        <div class="resume-details reveal">
+          <h3 class="resume-subtitle"><i class='bx bx-graduation'></i> Education</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="timeline-date">2023 – Present</span>
+              <h4>B.E. (ECE)</h4>
+              <p>Sri Krishna College of Technology, Coimbatore — CGPA: 7.41</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-date">2021 – 2023</span>
+              <h4>Higher Secondary Education</h4>
+              <p>Blue Bird Matriculation Higher Secondary School — 89%</p>
+            </div>
+          </div>
+          <h3 class="resume-subtitle" style="margin-top:2rem;"><i class='bx bx-certification'></i> Certifications</h3>
+          <ul class="cert-list">
+            <li><i class='bx bx-check-circle'></i> <b>Microsoft:</b> Introduction to End-to-End Analytics using
+              Microsoft Fabric</li>
+            <li><i class='bx bx-check-circle'></i> <b>Microsoft:</b> Discover Data Analysis</li>
+            <li><i class='bx bx-check-circle'></i> <b>Microsoft:</b> Get Started Building with Power BI</li>
+            <li><i class='bx bx-check-circle'></i> <b>Microsoft:</b> Fundamentals of Computer Networking</li>
+            <li><i class='bx bx-check-circle'></i> <b>Cisco:</b> Introduction to Cybersecurity</li>
+            <li><i class='bx bx-check-circle'></i> <b>Cisco:</b> Python Essentials 1</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title reveal"><span class="accent">//</span> Contact Me <span class="accent">//</span></h2>
+      <div class="contact-grid">
+        <!-- Form -->
+        <form id="contactForm" class="contact-form reveal" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+            <span class="error-msg" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            <span class="error-msg" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required />
+            <span class="error-msg" id="subjectError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+            <span class="error-msg" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block"><i class='bx bx-send'></i> Send Message</button>
+          <div id="formSuccess" class="form-success hidden">
+            <i class='bx bx-check-circle'></i> Message sent successfully!
+          </div>
+        </form>
+        <!-- Info -->
+        <div class="contact-info reveal">
+          <div class="contact-info-card">
+            <i class='bx bx-envelope'></i>
+            <h4>Email</h4>
+            <a href="mailto:deepak142006@gmail.com">deepak142006@gmail.com</a>
+          </div>
+          <div class="contact-info-card">
+            <i class='bx bx-phone'></i>
+            <h4>Phone</h4>
+            <a href="tel:+911234567890">+91 12345 67890</a>
+          </div>
+          <div class="contact-info-card">
+            <i class='bx bx-map'></i>
+            <h4>Location</h4>
+            <p>India</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-socials">
+        <a href="https://github.com/deepak2k6" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+            class='bx bxl-github'></i></a>
+        <a href="https://www.linkedin.com/in/deepak-l-197b32290?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+          target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://www.instagram.com/_deepxk._.18?igsh=MWdlcWFqdWZkc2NhcA==" target="_blank"
+          rel="noopener noreferrer" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+        <a href="mailto:deepak142006@gmail.com" aria-label="Email"><i class='bx bx-envelope'></i></a>
+      </div>
+      <p class="footer-credit">Designed &amp; Developed by <span class="accent">Deepak</span></p>
+      <p class="footer-copy">&copy; 2026 Deepak. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button id="scrollTopBtn" class="scroll-top" aria-label="Scroll to top"><i class='bx bx-chevron-up'></i></button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
