@@ -144,55 +144,93 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ---------- Contact Form Validation ---------- */
-  const form = document.getElementById('contactForm');
-  const nameInput = document.getElementById('name');
-  const emailInput = document.getElementById('email');
-  const subjectInput = document.getElementById('subject');
-  const messageInput = document.getElementById('message');
-  const formSuccess = document.getElementById('formSuccess');
+const form = document.getElementById('contactForm');
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const subjectInput = document.getElementById('subject');
+const messageInput = document.getElementById('message');
+const formSuccess = document.getElementById('formSuccess');
 
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    let valid = true;
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
 
-    // Reset errors
-    document.querySelectorAll('.error-msg').forEach(el => el.textContent = '');
+  let valid = true;
 
-    // Name
-    if (nameInput.value.trim().length < 2) {
-      document.getElementById('nameError').textContent = 'Please enter your name.';
-      valid = false;
-    }
-
-    // Email
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(emailInput.value.trim())) {
-      document.getElementById('emailError').textContent = 'Please enter a valid email.';
-      valid = false;
-    }
-
-    // Subject
-    if (subjectInput.value.trim().length < 2) {
-      document.getElementById('subjectError').textContent = 'Please enter a subject.';
-      valid = false;
-    }
-
-    // Message
-    if (messageInput.value.trim().length < 10) {
-      document.getElementById('messageError').textContent = 'Message must be at least 10 characters.';
-      valid = false;
-    }
-
-    if (valid) {
-      const recipient = 'deepak142006@gmail.com';
-      const subject = encodeURIComponent(subjectInput.value.trim());
-      const body = encodeURIComponent(
-        `Name: ${nameInput.value.trim()}\nEmail: ${emailInput.value.trim()}\n\n${messageInput.value.trim()}`
-      );
-
-      formSuccess.innerHTML = "<i class='bx bx-envelope'></i> Your email app is opening...";
-      formSuccess.classList.remove('hidden');
-      window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
-    }
+  // Reset errors
+  document.querySelectorAll('.error-msg').forEach(el => {
+    el.textContent = '';
   });
+
+  // Name
+  if (nameInput.value.trim().length < 2) {
+    document.getElementById('nameError').textContent =
+      'Please enter your name.';
+    valid = false;
+  }
+
+  // Email
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailRegex.test(emailInput.value.trim())) {
+    document.getElementById('emailError').textContent =
+      'Please enter a valid email.';
+    valid = false;
+  }
+
+  // Subject
+  if (subjectInput.value.trim().length < 2) {
+    document.getElementById('subjectError').textContent =
+      'Please enter a subject.';
+    valid = false;
+  }
+
+  // Message
+  if (messageInput.value.trim().length < 10) {
+    document.getElementById('messageError').textContent =
+      'Message must be at least 10 characters.';
+    valid = false;
+  }
+
+  // Stop if validation failed
+  if (!valid) {
+    return;
+  }
+
+  // Send form to Web3Forms
+  try {
+    const formData = new FormData(form);
+
+    const response = await fetch(
+      'https://api.web3forms.com/submit',
+      {
+        method: 'POST',
+        body: formData
+      }
+    );
+
+    const data = await response.json();
+
+    if (data.success) {
+      formSuccess.innerHTML =
+        "<i class='bx bx-check-circle'></i> Message sent successfully!";
+
+      formSuccess.classList.remove('hidden');
+
+      // Clear the form
+      form.reset();
+
+    } else {
+      formSuccess.innerHTML =
+        "<i class='bx bx-error-circle'></i> Something went wrong. Please try again.";
+
+      formSuccess.classList.remove('hidden');
+    }
+
+  } catch (error) {
+    formSuccess.innerHTML =
+      "<i class='bx bx-error-circle'></i> Unable to send message. Please try again.";
+
+    formSuccess.classList.remove('hidden');
+  }
+});
 });
