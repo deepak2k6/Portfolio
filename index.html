@@ -401,7 +401,8 @@
       <h2 class="section-title reveal"><span class="accent">//</span> Contact Me <span class="accent">//</span></h2>
       <div class="contact-grid">
         <!-- Form -->
-        <form id="contactForm" class="contact-form reveal" novalidate>
+        <form id="contactForm" class="contact-form reveal" action="https://api.web3forms.com/submit" method="POST" novalidate>
+        <input type="hidden" name="access_key" value="140bedf2-66f0-425e-b8ae-c24ac8b6d658">
           <div class="form-group">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Your Name" required />
